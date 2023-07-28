@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Kendra's Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>
+          <span class="weather-emoji"> 🌩 </span>
+          <span class="temperature" id="temperature-value"> 70</span>
+          <span class="degrees"
+            ><a href="#" class="degrees-temp" id="f-link">°F</a> |
+            <a href="#" class="degrees-temp" id="c-link">°C </a></span
+          >
+        </h1>
+      </div>
+      <h2 id="city-name">New York</h2>
+      <h3 class="weekday">Tuesday Jul 12</h3>
+      <div class="card-group text-center">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-day">Sun</h5>
+            <p class="card-emoji">🌤</p>
+            <h6 class="card-temperature">52°</h6>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mon</h5>
+            <p class="card-emoji">🌩</p>
+            <h6 class="card-temperature">67°</h6>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tue</h5>
+            <p class="card-emoji">🌩</p>
+            <h6 class="card-temperature">56°</h6>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Wed</h5>
+            <p class="card-emoji">☀️</p>
+            <h6 class="card-temperature">50°</h6>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Thur</h5>
+            <p class="card-emoji">🌤</p>
+            <h6 class="card-temperature">54°</h6>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <form id="search-city">
+        <div class="row">
+          <div class="col-7">
+            <input
+              id="search-input"
+              type="text"
+              class="input-box"
+              id="inputCity"
+              placeholder="Enter city"
+            />
+          </div>
+
+          <div class="col-2">
+            <button type="submit" id="search-button">Search</button>
+          </div>
+          <div class="col-3">
+            <button id="current-button">Current</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
