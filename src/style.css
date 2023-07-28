@@ -25,6 +25,15 @@ h5 {
 h6 {
   font-size: 15px;
 }
+h7 {
+  font-size: 15px;
+}
+a {
+  text-decoration: none;
+}
+.netlify {
+  color: #000000;
+}
 button {
   width: 100px;
   height: 50px;
