@@ -60,7 +60,7 @@ function showWeather(response) {
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
-
+console.log(response.data);
 function searchCity(city) {
   let apiKey = "c6f8ef4575250284954db9f4dfa7a996";
   let units = "metric";
