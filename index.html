@@ -11,19 +11,14 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>Kendra's Weather App</title>
   </head>
   <body>
     <div class="container">
       <div>
         <h1>
-          <img
-            src="https://openweathermap.org/img/wn/10d@2x.png"
-            alt="clear"
-            id="icon"
-            class="weather-emoji"
-          />
+          <span class="weather-emoji"> 🌩 </span>
           <span class="temperature" id="temperature-value"> 70</span>
           <span class="degrees"
             ><a href="#" class="degrees-temp" id="f-link">°F</a> |
@@ -95,15 +90,14 @@
     </div>
 
     <script src="src/index.js"></script>
-    <h7>
+    <br />
+    <h7
+      >hosted by <a class="netlify" href="https://www.netlify.com"> netlify</a>
+      <br />
       <a href="https://github.com/kendra-paterson/kendras-weather-app">
         Open-source code</a
       >
-      by Kendra Paterson
-
-      <br />
-      hosted by
-      <a class="netlify" href="https://www.netlify.com"> netlify</a></h7
+      by Kendra Paterson</h7
     >
   </body>
 </html>
